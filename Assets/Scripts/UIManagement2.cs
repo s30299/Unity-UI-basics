@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class UIManagement2 : MonoBehaviour
 {
     public GameObject pauseUI;
+    public PlayerMovement playerMovement;
     public void OnRestartPress()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -12,7 +13,7 @@ public class UIManagement2 : MonoBehaviour
     public void OnGameResumePress()
     {
         pauseUI.SetActive(false);
-
+        playerMovement.enabled = true;
     }
     public void OnGameExitPress()
     {
@@ -22,5 +23,6 @@ public class UIManagement2 : MonoBehaviour
     public void OnEnterPausePress()
     {
         pauseUI.SetActive(true);
+        playerMovement.enabled = false;
     }
 }
