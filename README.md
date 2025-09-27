@@ -1,5 +1,5 @@
 # Unity UI basics
-Unity sample project with implementations of Unity UI basics
+Unity sample project with my implementations of Unity UI basics
 TO DO:
   - canvas ✔️ ✔
   - text ✔️ ✔
